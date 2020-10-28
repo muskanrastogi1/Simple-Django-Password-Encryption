@@ -8,6 +8,7 @@
 </head>
 <body>
 {% block content %} 
+<body style="background-color: rgb(253, 215, 117);"></body>
     <link rel="stylesheet" type="text/css" href="{% static 'admin/style.css' %}">
     <h2 style="text-align: center; margin-bottom:5vh; margin-top:20vh; background-color:coral;">Home</h2>
     {% if user.is_authenticated %}
@@ -28,5 +29,5 @@
     <a href="{% url 'signup' %}" style="font-size:larger; margin-left: 48vw;background-color:khaki;">Sign Up</a>
     <h2 style="text-align: center; margin-bottom:5vh; margin-top:10vh; background-color:coral;">Welcome</h2>
     {% endif %}
-{% endblock content %}
 </body>
+{% endblock content %}
