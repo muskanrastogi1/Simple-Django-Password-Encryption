@@ -3,7 +3,8 @@
 {% block title %}Sign Page{% endblock title %}
 
 {% block content %} 
-    <h2>Sign Page</h2>
+    <h2 style="font-size:larger; background-color:coral;">Sign Page</h2>
+    <div style="font-size:larger;  background-color:khaki;">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
@@ -11,4 +12,5 @@
         <br><br>
         <a href="{% url 'home' %}">Home</a>
     </form>
+    </div>  
 {% endblock content %}
